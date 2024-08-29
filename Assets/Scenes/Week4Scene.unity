@@ -194,7 +194,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   studentNumber: 24901821
-  bandReached: 1
+  bandReached: 2
 --- !u!4 &372616722
 Transform:
   m_ObjectHideFlags: 0
