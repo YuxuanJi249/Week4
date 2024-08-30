@@ -5,7 +5,7 @@ using UnityEngine;
 public class PrintAndHide : MonoBehaviour
 {
     // Start is called before the first frame update
-    private int frameCount = 3;
+    private int frameCount = 4;
     public Renderer rend;
     void Start()
     {
@@ -15,6 +15,12 @@ public class PrintAndHide : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log($"GameObject's name: {gameObject.name}:{frameCount}");
+        Debug.Log($"{gameObject.name}:{frameCount}");
+        frameCount++;
+
+        if ( frameCount > 6)
+        {
+            rend.enabled = false;
+        }
     }
 }
